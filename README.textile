@@ -4,15 +4,15 @@ This is a tool to push content from rss feeds to your tumblr blog.
 
 h2. Installation
 
-# git clone git://github.com/copernic67/rss2tumblr.git
+# git clone "git://github.com/copernic67/rss2tumblr.git":git://github.com/copernic67/rss2tumblr.git
 # rename conf/defaults.yml-dist to conf/defaults.yml and edit this config file
 # rename conf/feeds.yml-dist to conf/feeds.yml and add your feeds to the file
 # Use a cronjob to call rss2tumblr.php as many times as you want. The script will publish only the new data.
 
 h2. Credits
 
-Developped by lejoe ( http://lejoe.com )
-Based on chregu's rss2twi.php and reused thanks to his permissive license.
+Developped by lejoe ("http://lejoe.com":http://lejoe.com)
+Based on "chregu":http://github.com/chregu/ 's "rss2twi.php":http://github.com/chregu/rss2twi.php and reused thanks to his permissive license.
 
 h2. FAQ
 
