@@ -9,6 +9,10 @@ h2. Installation
 # rename conf/feeds.yml-dist to conf/feeds.yml and add your feeds to the file
 # Use a cronjob to call rss2tumblr.php as many times as you want. The script will publish only the new data.
 
+h2. Credits
+
+Developped by lejoe ( http://lejoe.com )
+Based on chregu's rss2twi.php and reused thanks to his permissive license.
 
 h2. FAQ
 
