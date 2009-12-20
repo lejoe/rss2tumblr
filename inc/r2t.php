@@ -165,7 +165,6 @@ class r2t {
                 $e["player"] = $element->nodeValue;
             }
             
-            var_dump($e);
             if(!$entry->guid) {
                 $entry->guid = $entry->link;
             }
