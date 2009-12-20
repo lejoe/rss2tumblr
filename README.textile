@@ -10,6 +10,7 @@ h2. Install
 # Use a cronjob to call rss2tumblr.php as many times as you want. The script will publish only the new data.
 
 h2(#download). Download
+
 You can download this project in either "zip":http://github.com/lejoe/rss2tumblr/zipball/master or "tar":http://github.com/lejoe/rss2tumblr/tarball/master formats.
 
 You can also clone the project with "Git":http://git-scm.com by running:
