@@ -15,10 +15,6 @@ You can download this project in either "zip":http://github.com/lejoe/rss2tumblr
 You can also clone the project with "Git":http://git-scm.com by running:
 <pre>$ git clone git://github.com/lejoe/rss2tumblr</pre>
 
-** git "git://github.com/copernic67/rss2tumblr.git":git://github.com/copernic67/rss2tumblr.git
-** Download "zipped file":http://github.com/lejoe/rss2tumblr/zipball/master
-** Download "tarball file":http://github.com/lejoe/rss2tumblr/tarball/master
-
 h2. License
 
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE:http://github.com/lejoe/rss2tumblr/blob/master/LICENSE
