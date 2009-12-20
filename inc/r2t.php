@@ -160,6 +160,12 @@ class r2t {
             "title" => $entry->title,
             "content" => $entry->content
             );
+            
+            foreach ($entry->model->getElementsByTagNameNS('http://search.yahoo.com/mrss', 'player') as $element) {
+                $e["player"] = $element->nodeValue;
+            }
+            
+            var_dump($e);
             if(!$entry->guid) {
                 $entry->guid = $entry->link;
             }

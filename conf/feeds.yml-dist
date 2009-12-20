@@ -10,6 +10,7 @@
 #                      title:    the title of the item
 #                      link:     the link of the item
 #                      content:  the content of the item (description)
+#                      player:   the media:player tag when it exists
 #                  You can use regex to select only a part of a data from the feed:
 #                      regex:    The regex containing a group to select
 #                      subject:  The data from the feed to use as subject for the regex (title, link or content)
