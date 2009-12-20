@@ -1,4 +1,4 @@
-defaults:
+config:
     # The max new posts per feed the script should send to tumblr 
     maxposts: 5
     # Your Tumblr credentials

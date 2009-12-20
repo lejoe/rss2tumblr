@@ -19,19 +19,19 @@ class r2t {
                 die("Could not create " . R2T_TEMP_DIR);
             }
         }
-        $yaml = file_get_contents(R2T_PROJECT_DIR . '/conf/defaults.yml');
+        $yaml = file_get_contents(R2T_PROJECT_DIR . '/conf/config.yml');
         $yaml .= file_get_contents(R2T_PROJECT_DIR . '/conf/feeds.yml');
         $f = sfYAML::Load($yaml);
         if ($f['feeds']) {
             $this->feeds = $f['feeds'];
         }
-        $this->defaults = $f['defaults'];
+        $this->config = $f['config'];
     }
     
     public function process() {
         
         foreach ($this->feeds as $feedname => $options) {
-            $options = $this->mergeOptionsWithDefaults($options);
+            $options = $this->mergeFeedsWithConfig($options);
             $newentries = $this->getNewEntries($feedname, $options['url']);
             $cnt = 1;
             foreach ($newentries as $guid => $e) {
@@ -45,8 +45,8 @@ class r2t {
         return $newentries;
     }
     
-    protected function mergeOptionsWithDefaults($options) {
-        foreach ($this->defaults as $name => $value) {
+    protected function mergeFeedsWithConfig($options) {
+        foreach ($this->config as $name => $value) {
             if (!isset($options[$name])) {
                 $options[$name] = $value;
             }
