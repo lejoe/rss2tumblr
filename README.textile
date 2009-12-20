@@ -1,0 +1,22 @@
+h2. Description
+
+This is a tool to push content from rss feeds to your tumblr blog.
+
+h2. Installation
+
+# git clone git://github.com/copernic67/rss2tumblr.git
+# rename conf/defaults.yml-dist to conf/defaults.yml and edit this config file
+# rename conf/feeds.yml-dist to conf/feeds.yml and add your feeds to the file
+# Use a cronjob to call rss2tumblr.php as many times as you want. The script will publish only the new data.
+
+
+h2. FAQ
+
+Q: Why not using the built in tumblr feed importer ?
+A: It's limited to 5 feeds
+   It's slow (updates every hours at best)
+   You can't import every feed to any post type
+   You can't customize which data goes to which tumblr feed
+
+Q: Can I use this tool with another blog than my default one (other than the primary one)?
+A: No. Unfortunately the tumblr API doesn't allow that for now.
