@@ -4,7 +4,7 @@ A php script to push content from rss feeds to your tumblr blog.
 
 h2. Install
 
-# Get the code. (See "Download":"#download" instructions below)
+# Get the code. (See "Download":#download instructions below)
 # rename conf/defaults.yml-dist to conf/defaults.yml and edit this config file
 # rename conf/feeds.yml-dist to conf/feeds.yml and add your feeds to the file
 # Use a cronjob to call rss2tumblr.php as many times as you want. The script will publish only the new data.
