@@ -30,6 +30,7 @@
         pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    dt { float:left; font-style: bold; color: #E85B00;}
     </style>
     
 </head>
@@ -61,13 +62,6 @@
         <li>Use a cronjob to call rss2tumblr.php as many times as you want. The script will publish only the new data.</li>
     </ol>
     
-    <h2>License</h2>
-    <p><a href="http://github.com/lejoe/rss2tumblr/blob/master/LICENSE">DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</a></p>
-    
-    <h2>Authors</h2>
-    <p>lejoe ( <a href="http://lejoe.com">http://lejoe.com</a> )</p>
-
-
     <h2 id="download">Download</h2>
     <p>
       You can download this project in either
@@ -78,7 +72,33 @@
       by running:
       <pre>$ git clone git://github.com/lejoe/rss2tumblr</pre>
     </p>
-      
+    
+    <h2>License</h2>
+    <p><a href="http://github.com/lejoe/rss2tumblr/blob/master/LICENSE">DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</a></p>
+    
+    <h2>Authors</h2>
+    <p>lejoe ( <a href="http://lejoe.com">http://lejoe.com</a> )<br/>
+       Based on <a href="http://github.com/chregu/">chregu</a>'s <a href="http://github.com/chregu/rss2twi.php">rss2twi.php</a></p>
+    
+    <h2>
+        <span class="caps">FAQ</span>
+    </h2>
+    <dl>
+        <dt>Q:</dt>
+        <dd>Why not using the built in tumblr feed importer ?</dd>
+        <dt>A:</dt>
+        <dd>It’s limited to 5 feeds<br>
+        It’s slow (updates every hours at best)<br>
+        You can’t import every feed to any post type<br>
+        You can’t customize which data goes to which tumblr feed</dd>
+    </dl>
+    <dl>
+        <dt>Q:</dt>
+        <dd>Can I use this tool with another blog than my default one (other than the primary one)?</dd>
+        <dt>A:</dt>
+        <dd>No. Unfortunately the tumblr API doesn’t allow that for now.</dd>
+    </dl>
+    
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/lejoe/rss2tumblr">lejoe/rss2tumblr</a>
     </div>
