@@ -1,0 +1,8 @@
+defaults:
+    # The max new posts per feed the script should send to tumblr 
+    maxposts: 5
+    # Your Tumblr credentials
+    tumblr:
+        email: your@email.com
+        password: ****
+        url: http://yourtumblrurl.tumblr.com

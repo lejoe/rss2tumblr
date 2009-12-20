@@ -1,0 +1,45 @@
+# For each feeds give it a name and specify:
+#     url     :    The url of the feed to grab.
+#     type    :    The tumblr type of the posts for the feed.
+#                  Available types: (regular, photo, quote, link, conversation, video, audio)
+#                  See http://www.tumblr.com/docs/api#api_write for more info.
+#     map     :    Which data from the feed go to which tumblr fields.
+#                  Check out http://www.tumblr.com/docs/api#api_write to see what fields you
+#                  need to provide for each data types.
+#                  Data available from the feed items:
+#                      title:    the title of the item
+#                      link:     the link of the item
+#                      content:  the content of the item (description)
+#                  You can use regex to select only a part of a data from the feed:
+#                      regex:    The regex containing a group to select
+#                      subject:  The data from the feed to use as subject for the regex (title, link or content)
+#                      keyname:  The name of the group used in the regex
+#
+feeds:
+    #Example of feed to tumblr videos (favorites from youtube)
+    feedexample1: 
+        url: http://gdata.youtube.com/feeds/api/users/joelbez/favorites?orderby=updated
+        type: video
+        map:
+            embed: link
+            caption: title
+    #Example of feed to tumblr links (delicious links)
+    feedexample2: 
+        url: http://feeds.delicious.com/v2/rss/lejoe/%3Ashared?count=15
+        type: link
+        map:
+            url: link
+            name: title
+            description: content
+    #Example of feed to tumblr photos with regex selection
+    feedexample3:
+        url: http://weheartit.com/lejoe.rss
+        type: photo
+        map:
+            source:
+                # This takes the soure of image from the content of the feed
+                # and maps it to the source of tumblr pictures
+                regex: '/\<img.+src="(?<url>.+)"/'
+                subject: content
+                keyname: url
+            caption: title
