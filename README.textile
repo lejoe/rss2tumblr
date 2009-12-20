@@ -23,7 +23,7 @@ Q: Why not using the built in tumblr feed importer ?
 A: It's limited to 5 feeds
    It's slow (updates every hours at best)
    You can't import every feed to any post type
-   You can't customize which data goes to which tumblr feed
+   You can't customize which feed data goes to which tumblr
 
 Q: Can I use this tool with another blog than my default one (other than the primary one)?
 A: No. Unfortunately the tumblr API doesn't allow that for now.
